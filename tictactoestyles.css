@@ -1,0 +1,44 @@
+#ticTacToeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: auto;
+  justify-content: center;
+}
+
+.grid-cell {
+  width: 75px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 0 0 0 -1px;
+}
+
+#turnIndicator {
+  color: white;
+  font-family: arial;
+  font-size: 1rem;
+}
+#gameName {
+  color: white;
+  font-family: arial;
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+body {
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+}
+div {
+  color: white;
+}

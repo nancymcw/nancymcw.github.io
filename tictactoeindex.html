@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="tictactoestyles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div
+      id="resultAlert"
+      class="alert alert-dismissible fade show"
+      role="alert"
+      style="display: none"
+    >
+      <strong id="resultText"></strong>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+        onclick="hideResultAlert()"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="container">
+      <center>
+        <h2 id="gameName">Tic Tac Toe</h2>
+        <div id="turnIndicator">Player X's Turn</div>
+      </center>
+
+      <div id="ticTacToeGrid">
+        <div class="toprow">
+          <div class="grid-cell" onclick="handleClick(0)"></div>
+          <div class="grid-cell" onclick="handleClick(1)"></div>
+          <div class="grid-cell" onclick="handleClick(2)"></div>
+        </div>
+        <div class="middlerow">
+          <div class="grid-cell" onclick="handleClick(3)"></div>
+          <div class="grid-cell" onclick="handleClick(4)"></div>
+          <div class="grid-cell" onclick="handleClick(5)"></div>
+        </div>
+        <div class="bottomrow">
+          <div class="grid-cell" onclick="handleClick(6)"></div>
+          <div class="grid-cell" onclick="handleClick(7)"></div>
+          <div class="grid-cell" onclick="handleClick(8)"></div>
+        </div>
+      </div>
+      <center>
+        <br />
+        <button id="clearButton" class="btn btn-danger" onclick="clearBoard()">
+          Clear Board
+        </button>
+      </center>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>

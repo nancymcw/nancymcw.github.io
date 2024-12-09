@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nancy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#about"><button class="nav-about">About</button></a>
+      <a href="#projects"><button class="nav-projects">Projects</button></a>
+      <a href="#contact"><button class="nav-contact">Contact</button></a>
+    </header>
+
+    <section id="about" class="section">
+      <img src="newprofilepic.jpg" class="face-image" />
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/nancy-mcwhite/"
+          ><img src="linkedin-icon.svg" class="icon"
+        /></a>
+        <a href="https://github.com/nancymcw"
+          ><img src="github-icon.svg" class="icon"
+        /></a>
+      </div>
+      <p class="header">hello world</p>
+      <section class="about-me-section">
+        <p class="about-me-text">
+          I'm Nancy, hailing from Minneapolis, MN. In 2021, I moved to
+          Philadelphia, PA to check out the East Coast and broaden my horizons.
+          Recently, I completed my frontend web development certificate at the
+          Community College of Philadelphia, an achievement that has ignited my
+          passion for creating intuitive user experiences. Proficient in HTML,
+          CSS, Javascript & React.js, I'm eager to further refine my skills and
+          specialize in crafting responsive and dynamic web applications. Feel
+          free to reach out if you're interested in collaborating or starting a
+          project together!
+        </p>
+        <p class="skill-icons">
+          <img src="html-5.svg" class="icon" />
+          <img src="css-3.svg" class="icon" />
+          <img src="javascript.svg" class="icon" />
+          <img src="react.svg" class="icon" />
+        </p>
+        <p class="cert-paragraph">
+          <a href="/certificate.png">
+            <img src="certificate.png" class="certificate-image"
+          /></a>
+        </p>
+        <img src="minnesotaroots.jpg" class="mnroots-image" />
+      </section>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="header">projects</p>
+      <div class="card-container">
+        <div class="project-card">
+          <h3>Tic Tac Toe</h3>
+          <section><img src="tictactoe.jpg" class="card-image" /></section>
+          <section class="card-description">
+            HTML, CSS, jQuery, Javascript, Bootstrap
+          </section>
+          <a href="https://github.com/nancymcw/TicTacToeGame"
+            ><img src="github-icon.svg" class="icon"
+          /></a>
+          <a href="tictactoeindex.html"
+            ><button class="try-button">Try me!</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Tastify</h3>
+          <section><img src="tastifymobile.png" class="card-image" /></section>
+          <section class="card-description">
+            HTML, CSS, jQuery, Javascript, React, React Bootstrap, React Router,
+            mockAPI, CRUD operations, github
+          </section>
+          <a href="https://github.com/nancymcw/tastify"
+            ><img src="github-icon.svg" class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="header">contact me</p>
+
+      <p class="work-together">Let's work together! Send me a message.</p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="8eb52d29-de1d-42d5-8c5f-6bb6972806eb"
+        />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
