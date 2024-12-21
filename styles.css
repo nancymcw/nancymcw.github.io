@@ -130,10 +130,6 @@ button {
   transition: filter 300ms;
 }
 
-.project-card:hover {
-  filter: drop-shadow(0 0 2em #ff998a);
-}
-
 .card-image {
   width: 100%;
   height: 290px;
@@ -172,6 +168,10 @@ textarea {
 @media (width >= 768px) {
   .card-container {
     display: flex;
+  }
+
+  .project-card:hover {
+    filter: drop-shadow(0 0 2em #aaa);
   }
 
   /*PUTS MINNESOTAROOTS.JPG TO RIGHT OF ABOUTME TEXT... BUT THEN TOP PIC LOOKS WEIRDLY SMALL / PAGE LOOKS OFF-BALANCE?*/
