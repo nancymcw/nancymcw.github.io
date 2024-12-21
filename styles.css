@@ -126,6 +126,12 @@ button {
   border: 2px solid #e2e2e2;
   border-radius: 10px;
   position: relative;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.project-card:hover {
+  filter: drop-shadow(0 0 2em #ff998a);
 }
 
 .card-image {
